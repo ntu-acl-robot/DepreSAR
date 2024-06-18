@@ -1,5 +1,5 @@
 # DepreSAR
-This repo provides API usage to get responses from a cloud server that enables depression detection and emotional support through a social assistive robot, developed and maintained by [NTU AIROBO](http://ai.robo.ntu.edu.tw/).
+This repo provides API usage to get responses from a cloud server that enables **depression detection** and **emotional support** through a social assistive robot, developed and maintained by [NTU AIROBO](http://ai.robo.ntu.edu.tw/).
 
 Since this research is currently under submission, please get in touch with our team to communicate the cooperation details to obtain full API access.
 
@@ -15,8 +15,11 @@ Version: 1.0 <br>
 Use Chain-of-Thought Prompting with GPT models(gpt-3.5-turbo and gpt-4o), providing definitions and instructions for strategies in [ESC](https://github.com/thu-coai/Emotional-Support-Conversation) framework, details can be found in [3]
 
 ## Usage
+Replace <⋯⋯> in client.py and run 
+>python client.py
+
 ### Server URL
-contact our group for further information
+contact our team for further information
 
 ### Parameters
 #### request(json)
@@ -29,17 +32,17 @@ contact our group for further information
 |"self-assessed score"| int in \[0, 24\], PHQ-8 score ref to: [EN](https://www.childrenshospital.org/sites/default/files/2022-03/PHQ-8.pdf), [ZH](https://www.depression.org.tw/detection/index_04.asp)  |
 |"user_id"| int, e.g., 123,|
 |"user_name"| string, e.g., "dep_sup_test", |
-|"**user_message**"| string, specially input "exit" or "結束對話" to terminate the dialog and obtain depression detection result |
+|"**user_message**"| string, especially input "exit" or "結束對話" to terminate the dialog and obtain depression detection result |
 |"**post_time**"| datetime string, format: "%d/%m/%Y %H:%M:%S"|
 
 #### response(json)
 
 |  key  |    value    |  
 |-------|-------------|
-|"return_message"|"..."|
+|"return_message"| string, especially get "根據本系統的評估結果，您的憂鬱傾向偏高/低，⋯⋯" as depression detection result |
 
 ## Contact Info
-Dr. Li-Chen Fu, Mail: <lichen@ntu.edu.tw>
+Dr. Li-Chen Fu, mail: <lichen@ntu.edu.tw>
 
 
 ### Reference
