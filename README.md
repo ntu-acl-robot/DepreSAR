@@ -1,5 +1,5 @@
 # DepreSAR
-This repo provides API usage to get responses from a cloud server that enables **depression detection** and **emotional support** through a social assistive robot, developed and maintained by [NTU AIROBO](http://ai.robo.ntu.edu.tw/).
+This repo provides API usage to get responses from a cloud server that enables **depression detection** and **emotional support** through a social assistive robot, developed and maintained by [NTU AIROBO](http://ai.robo.ntu.edu.tw/en/index.php).
 
 Since this research is currently under submission, please get in touch with our team to communicate the cooperation details to obtain full API access.
 
